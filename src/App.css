@@ -1,0 +1,114 @@
+body {
+  background-color: #808080; 
+  color: white; 
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #444; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+/* Styling for the companylist */
+.company-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company-item {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  margin-bottom: 30px; 
+  padding: 20px;
+  background-color: #555; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styling for the company information */
+.company-info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+.company-id {
+  font-size: 14px;
+  color: #ccc; 
+}
+
+/* favorite button */
+.favorite-button {
+  background-color: #197dff; 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  align-self: flex-end; 
+}
+
+.favorite-button:hover {
+  background-color: #002e69; 
+}
+
+/*error messages */
+.error-message {
+  background-color: #d9534f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .company-item {
+    padding: 15px;
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+
+  .favorite-button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
