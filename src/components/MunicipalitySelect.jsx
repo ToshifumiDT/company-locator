@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { fetchMunicipalities } from '../api/ssbapi'; 
-import './MunicipalitySelect.css';
+import '../App.css';
 
 function MunicipalitySelect({ onSelect }) {
   const [municipalities, setMunicipalities] = useState([]);

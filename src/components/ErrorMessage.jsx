@@ -1,4 +1,4 @@
-import './ErrorMessage.css';
+import '../App.css';
 
 function ErrorMessage({ message }) {
     return (

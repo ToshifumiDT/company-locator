@@ -1,4 +1,4 @@
-import './FavoriteButton.css';
+import '../App.css';
 
 function FavoriteButton({ company, isFavorited, onToggleFavorite }) {
   // Do not display if company does not exist

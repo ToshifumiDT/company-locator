@@ -1,4 +1,4 @@
-import './CompanyDetailModal.css';
+import '../App.css';
 
 function CompanyDetailModal({ company, isOpen, onClose }) {
     if (!isOpen || !company) {

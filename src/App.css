@@ -1,6 +1,6 @@
 body {
-  background-color: #808080; 
-  color: white; 
+  background-color: #808080;
+  color: white;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -15,11 +15,10 @@ body {
   width: 80%;
   max-width: 1200px;
   padding: 20px;
-  background-color: #444; 
+  background-color: #444;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 h2 {
   font-size: 24px;
@@ -30,7 +29,50 @@ h2 {
   padding-bottom: 10px;
 }
 
-/* Styling for the companylist */
+/* style for serch */
+.year-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.year-select label {
+  margin-right: 10px;
+}
+
+.year-select input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #555;
+  color: white;
+}
+
+/* "Finn bedrifter" button */
+.search-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-button {
+  background-color: #197dff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #002e69;
+  transform: scale(1.05); 
+}
+
+/* Styling for the company list */
 .company-list {
   list-style-type: none;
   padding: 0;
@@ -39,51 +81,51 @@ h2 {
 
 .company-item {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   padding: 20px;
-  background-color: #555; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  background-color: #555;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling for the company information */
 .company-info {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: flex-start;
 }
 
 .company-name {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .company-id {
   font-size: 14px;
-  color: #ccc; 
+  color: #ccc;
 }
 
-/* favorite button */
+/* Favorite button */
 .favorite-button {
-  background-color: #197dff; 
-  color: white;
+  background-color: #ffc219;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
   transition: background-color 0.3s ease;
-  align-self: flex-end; 
+  align-self: flex-end;
 }
 
 .favorite-button:hover {
-  background-color: #002e69; 
+  background-color: #573100;
 }
 
-/*error messages */
+/* Error message */
 .error-message {
   background-color: #d9534f;
   padding: 10px;
@@ -110,5 +152,30 @@ h2 {
   .favorite-button {
     font-size: 12px;
     padding: 8px 12px;
+  }
+
+  
+  .year-select, .search-button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-button {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 50px; 
+  }
+
+  .year-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .year-select input {
+    width: 20%;
+    margin-top: 10px;
+    text-align: center;
   }
 }

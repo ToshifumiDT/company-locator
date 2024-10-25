@@ -1,3 +1,5 @@
+import '../App.css';
+
 function CompanyList({ companies, onCompanyClick, favorites, onToggleFavorite }) {
    // Display message if the company list is empty
   if (companies.length === 0) {
